@@ -1,0 +1,15 @@
+@startuml "capter00_README_001"
+box "プログラムの構成"
+    participant "index.html" as index
+    participant "script.js"  as script
+    entity "sample.csv"      as sample
+end box
+
+index  ->  sample : ファイル選択
+sample --> index
+index  ->  script : 選択結果
+script ->  sample : ファイル読込
+sample --> script
+script ->> script : 内容の編集
+script --> index  : 結果出力
+@enduml

@@ -1,0 +1,14 @@
+{
+    "root": ".",
+    "language": "ja",
+    "title": "教科書サンプル",
+    "styles": {
+        "website": "styles/my_website.css",
+        "pdf": "styles/my_pdf.css"
+    },
+    "pdf": {
+        "fontSize": 18,
+        "fontFamily": "MigMix 1P"
+    },
+    "plugins": ["-sharing","hide-published-with"]
+}

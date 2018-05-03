@@ -1,0 +1,27 @@
+h1 {
+    border-bottom: 2px solid #000; 
+    padding-bottom:3px;
+}
+
+body {
+    counter-reset: section 0;
+}
+
+h2 {
+    counter-increment: section;
+    counter-reset: subsection;
+    clear: right;
+}
+
+h2:before {
+    content: counter(section) ") ";
+}
+
+h3 {
+    counter-increment: subsection;
+    clear: right;
+}
+
+h3:before {
+    content: counter(section) "." counter(subsection) ") ";
+}
